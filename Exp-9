@@ -9,9 +9,11 @@ You can also contact support@yahoo.com."""
 
 email_pattern = r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}'
 
+#Step 4:Find all email addresses in the text
 emails = re.findall(email_pattern,text)
-
+#Step 5: Display a heading
 print("Email addresses found:")
 
+#Step 6: Display each email address
 for email in emails:
     print(email)
